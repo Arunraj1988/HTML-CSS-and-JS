@@ -1,0 +1,194 @@
+<style>
+.request_button {
+  color :#fff;
+  background-color: rgba(10, 10, 10, 0.903);
+
+}
+.request_button:hover{
+  opacity:.57;
+  cursor: pointer;;
+   
+} 
+
+.amazon_button {
+  background-color: yellow;
+  color: black;
+  border-radius: 25px;
+  padding : auto;
+  font-size : 20px;
+  font-weight: bold;
+  font-family:'serif';
+  
+}
+.amazon_button:hover {
+  color:rgb(239, 42, 72);
+  background-color: rgba(255, 255, 0, 0.5);
+  transition: background-color 0.3s ease;
+  cursor: pointer;;
+}
+.github_button {
+  background-color :#0dc054;
+  color : #fff;
+  font-size: 25px;
+  font-weight: bold; 
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  border-start-start-radius: 10px;
+  border-start-end-radius:10px;
+  border: 2px solid #131313;
+  padding: 12px 18px;
+}
+.github_button:hover{
+  cursor :pointer;
+  box-shadow: 10px 10px 10px rgba(92, 225, 183, 0.897);
+
+}
+.bootstrap_button {
+  background-color: #b299d7;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 25px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.bootstrap_button:hover {
+  background-color: #7946d2;
+  cursor : pointer;
+  stroke-opacity: 0.5;
+}
+.download_button {
+  background-color :white;
+  color:#baa2de;
+  border-radius :5px;
+  padding :10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.download_button:hover {
+  background-color: rgba(192, 198, 200, 0.881);
+  color :#7946d2;
+  transition: background-color 0.3s ease;
+}
+.linkedin_button {
+  background-color: #5b4ce2;
+  color : #fff;
+  border-radius : 25px;
+  font-size : 15px;
+  padding: 12px 15px;
+  font-weight: bold;
+  border: 2px #2211ba solid;
+}
+.linkedin_button:hover {
+  background-color:rgb(73, 29, 195);
+  color :#fff;
+  cursor: pointer;
+  transition : background-color 0.3s ease;
+}
+.linkedin_save_button{
+  background-color: #fff;
+  color:#2211ba;
+  border-radius : 25px;
+  font-size : 15px;
+  padding: 12px 25px 12px;
+  font-weight: bold;
+  border: 2px #2211ba solid;
+}
+.linkedin_save_button:hover {
+background-color: rgba(181, 185, 198, 0.522);
+color:#2211ba;
+cursor : pointer;
+transition:background-color 0.3s ease-in;
+}
+.custom_numbering {
+  counter-reset: section;
+  list-style :none;
+  padding-left : 0;
+}
+.custom_numbering li {
+  counter-increment : section;
+  margin-bottom : 10px;
+}
+.custom_numbering li::before {
+  content : "(3"counter(section,lower-alpha)".)";
+  fond-weight :bold;
+}
+
+.add_cart_button {
+  background-color : yellow;
+  color : black;
+  border-radius : 25px;
+  padding : auto;
+  font-size : 15px;
+  cursor : pointer;
+}
+.add_cart_button:active {
+  background-color : red;
+  transform :scale(0.98);
+  transition: transform 0.6s ease-in-out;
+}
+
+  
+.buy_now {
+  background-color :#dd8007;
+  color: black;
+  border-radius : 25px;
+  padding : auto;
+  font-size :15px;
+  cursor : pointer;
+  position : relative;
+  
+}
+.buy_now:active { 
+  background-color:red;
+  transform : scale(0.98);
+  transition: transform 0.5s ease-in-out;
+}
+.buy_now:active::after{
+  content: "*Click to buy now";
+  color :rgba(10, 10, 10, 0.903);
+  margin-right: 5px;
+  font-size: 12px;;
+}
+  </style>
+
+
+<h1><u>Lesson :3 Excercise - Hovers, Transitions and Shadows</u></h1>
+<ol class = "custom_numbering">
+  <li>Uber : Create button and add opacity? </li>
+  <button class ="request_button">Request now</button>
+<p></p>
+
+  <li>Amazon : Create button and add hover feature like transform, transition and background-color ? </li>
+  <button class ="amazon_button"> Add to Cart</button></a>
+<p></p>
+
+ <li>GitHub : Creare button and add shadow feature to the button. Provide anchor to the github homepage ? </li>
+  <button class ="github_button"><a href= "https://github.com/"target ="_blank"style = "color : white">Sign up</button></a>
+<p></p>
+
+  <li>Bootstrap : Create separare buttons for homepage and download. Provide features like pointer cursor, hover, active,background-color and text color ? </li>
+  <button class ="bootstrap_button"><a href="https://getbootstrap.com/"target ="_blank"style ="color :white">Get Started</button></a>
+  <button class ="download_button"><a href="https://getbootstrap.com/docs/5.3/getting-started/download/"target ="_blank"style ="color:#9876cb">Download</button></a>
+<p></p>
+
+  <li>LinkedIn : Create Linkedin buttons on Apply on company website and Save. Add features like pointer cursor, hover,background-color and border width ?   </li>
+  <button class ="linkedin_button">Apply on company website</button>
+  <button class ="linkedin_save_button">Save</button>
+<p></p>
+  <li>amazon_cart_page :  Create an Amazon cart web page ?</li>
+  <p class = "back_to_amazon"> <a href="https://amazon.com/" target="_blank" style="font-size: 20px;">Back to Amazon</a></p>
+  <p> </p>
+  <p style = "color : brown;font-size:27px;font-family:'Times New Roman';font-weight : bold;font-style: italic;">Nike Black Running Shoes</p> 
+  <p> </p>
+  <p style = "color : green; font-size : 20px; font-weight : bold">$35 - in stock</p>
+  <p> </p>
+  <p style ="color : black;font-size : 25px">Free delivery tomorrow.</p>
+  <p> </p>
+  <button class="add_cart_button">Add to Cart</button>
+  <button class ="buy_now">Buy Now</button>  
+<p> </p>
+
+</ol>
+
+
